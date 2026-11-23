@@ -1,0 +1,393 @@
+object FConvert: TFConvert
+  Left = 914
+  Height = 837
+  Top = 146
+  Width = 605
+  Caption = 'Convert 8 bit hex formats V2.6'
+  ClientHeight = 837
+  ClientWidth = 605
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '3.8.0.0'
+  object ehexloadfile: TEdit
+    Left = 144
+    Height = 23
+    Top = 24
+    Width = 306
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object ehexsavefile: TEdit
+    Left = 144
+    Height = 23
+    Top = 88
+    Width = 306
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object RadioGroup1: TRadioGroup
+    Left = 24
+    Height = 320
+    Top = 168
+    Width = 182
+    AutoFill = True
+    Caption = 'Type of file to convert'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 300
+    ClientWidth = 178
+    TabOrder = 2
+    object blbin: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 0
+      Width = 166
+      Caption = 'Binary (.bin)'
+      TabOrder = 0
+      OnClick = blbinClick
+    end
+    object blPRG: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 34
+      Width = 166
+      Caption = 'PRG (.prg)'
+      TabOrder = 1
+      OnClick = blPRGClick
+    end
+    object blhex: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 68
+      Width = 166
+      Caption = 'HEX (.hex)'
+      TabOrder = 2
+      OnClick = blhexClick
+    end
+    object blintelhex: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 102
+      Width = 166
+      Caption = 'Intel HEX (.ihex)'
+      TabOrder = 3
+      OnClick = blintelhexClick
+    end
+    object blmospaper: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 136
+      Width = 166
+      Caption = 'MOS papertape (.pap, .ptp)'
+      TabOrder = 4
+      OnClick = blmospaperClick
+    end
+    object blTIMpaper: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 170
+      Width = 166
+      Caption = 'TIM papertape (.tim)'
+      TabOrder = 8
+      OnClick = blTIMpaperClick
+    end
+    object blmotosrec: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 204
+      Width = 166
+      Caption = 'Motorola Srec (.srec)'
+      TabOrder = 5
+      OnClick = blmotosrecClick
+    end
+    object blkimtape: TRadioButton
+      Left = 6
+      Height = 34
+      Top = 238
+      Width = 166
+      Caption = 'KIM-1 Tape (.tap)'
+      TabOrder = 7
+      OnClick = blkimtapeClick
+    end
+    object blapple1: TRadioButton
+      Left = 6
+      Height = 28
+      Top = 272
+      Width = 166
+      Caption = 'Apple 1 HEX (.ahex)'
+      TabOrder = 6
+      OnClick = blapple1Click
+    end
+  end
+  object lloadfile: TLabel
+    Left = 24
+    Height = 15
+    Top = 24
+    Width = 75
+    Caption = 'File to convert'
+    ParentColor = False
+  end
+  object lsavefile: TLabel
+    Left = 24
+    Height = 15
+    Top = 88
+    Width = 38
+    Caption = 'Save to'
+    ParentColor = False
+  end
+  object RadioGroup2: TRadioGroup
+    Left = 393
+    Height = 319
+    Top = 170
+    Width = 175
+    AutoFill = True
+    Caption = 'Type of file to save to'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 299
+    ClientWidth = 171
+    TabOrder = 3
+    object bsBIN: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 0
+      Width = 159
+      Caption = 'Binary (.bin)'
+      TabOrder = 0
+      OnClick = bsBINClick
+    end
+    object bsPRGfile: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 30
+      Width = 159
+      Caption = 'PRG (.prg)'
+      TabOrder = 1
+      OnClick = bsPRGfileClick
+    end
+    object bshex: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 60
+      Width = 159
+      Caption = 'HEX (.hex)'
+      TabOrder = 2
+      OnClick = bshexClick
+    end
+    object bsintelhex: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 90
+      Width = 159
+      Caption = 'Intel HEX (.ihex)'
+      TabOrder = 3
+      OnClick = bsintelhexClick
+    end
+    object bsmospaper: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 120
+      Width = 159
+      Caption = 'MOS papertape (.pap, .ptp)'
+      TabOrder = 4
+      OnClick = bsmospaperClick
+    end
+    object bsTIMpaper: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 150
+      Width = 159
+      Caption = 'TIM papertape (.tim)'
+      TabOrder = 9
+      OnClick = bsTIMpaperClick
+    end
+    object bsmotosrec: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 180
+      Width = 159
+      Caption = 'Motorola Srec (.srec)'
+      TabOrder = 5
+      OnClick = bsmotosrecClick
+    end
+    object bsapple1: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 210
+      Width = 159
+      Caption = 'Apple 1 HEX (.ahex)'
+      TabOrder = 6
+      OnClick = bsapple1Click
+    end
+    object bsKIMtape: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 240
+      Width = 159
+      Caption = 'KIM-1 Tape (.tap)'
+      TabOrder = 7
+      OnClick = bsKIMtapeClick
+    end
+    object bsDefineType: TRadioButton
+      Left = 6
+      Height = 29
+      Top = 270
+      Width = 159
+      Caption = 'Define Byte'
+      Checked = True
+      TabOrder = 8
+      TabStop = True
+      OnClick = bsDefineTypeClick
+    end
+  end
+  object memostatus: TMemo
+    Left = 34
+    Height = 219
+    Top = 574
+    Width = 541
+    Lines.Strings = (
+      'memostatus'
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+  end
+  object bconvrt: TButton
+    Left = 226
+    Height = 58
+    Top = 191
+    Width = 145
+    Caption = 'Convert'
+    TabOrder = 5
+    OnClick = bconvrtClick
+  end
+  object estartaddress: TEdit
+    Left = 144
+    Height = 23
+    Top = 128
+    Width = 82
+    TabOrder = 6
+    OnEditingDone = estartaddressEditingDone
+  end
+  object lstartaddress: TLabel
+    Left = 24
+    Height = 15
+    Top = 128
+    Width = 67
+    Caption = 'Start address'
+    ParentColor = False
+  end
+  object lstatus: TLabel
+    Left = 39
+    Height = 15
+    Top = 544
+    Width = 32
+    Caption = 'Status'
+    ParentColor = False
+  end
+  object bclose: TButton
+    Left = 227
+    Height = 58
+    Top = 284
+    Width = 143
+    Caption = 'Close'
+    TabOrder = 7
+    OnClick = bcloseClick
+  end
+  object etapeID: TEdit
+    Left = 310
+    Height = 23
+    Top = 378
+    Width = 60
+    TabOrder = 8
+    Text = 'etapeID'
+    OnEditingDone = etapeIDEditingDone
+  end
+  object ltapeID: TLabel
+    Left = 227
+    Height = 15
+    Top = 378
+    Width = 39
+    Caption = 'Tape ID'
+    ParentColor = False
+  end
+  object ldefinetext: TLabel
+    Left = 227
+    Height = 15
+    Top = 424
+    Width = 56
+    Caption = 'Define text'
+    ParentColor = False
+  end
+  object edefinetype: TEdit
+    Left = 312
+    Height = 23
+    Top = 424
+    Width = 61
+    TabOrder = 9
+    Text = '.byte $'
+  end
+  object bload: TButton
+    Left = 468
+    Height = 24
+    Top = 24
+    Width = 46
+    Caption = '...'
+    TabOrder = 10
+    OnClick = bloadClick
+  end
+  object bsave: TButton
+    Left = 468
+    Height = 24
+    Top = 88
+    Width = 46
+    Caption = '...'
+    TabOrder = 11
+    OnClick = bsaveClick
+  end
+  object Loaddialog: TOpenDialog
+    Filter = '*.bin|*.bin|*.dmp|*.dmp'
+    Left = 340
+    Top = 520
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = '.ptp,.pap'
+    Left = 271
+    Top = 516
+  end
+  object MainMenu1: TMainMenu
+    Left = 178
+    Top = 516
+    object MenuFile: TMenuItem
+      Caption = 'File'
+      object MenuExit: TMenuItem
+        Caption = 'Exit'
+        OnClick = MenuExitClick
+      end
+    end
+    object Menuhelp: TMenuItem
+      Caption = 'Help'
+      object MenuHelphelp: TMenuItem
+        Caption = 'Help'
+        OnClick = MenuHelphelpClick
+      end
+      object MenuItem1: TMenuItem
+        Caption = 'Check for Update'
+        OnClick = MenuItem1Click
+      end
+      object MenuAbout: TMenuItem
+        Caption = 'About'
+        OnClick = MenuAboutClick
+      end
+    end
+  end
+end

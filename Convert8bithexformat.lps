@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="18">
+      <Unit0>
+        <Filename Value="Convert8bithexformat.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos Y="18"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainconvert.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FConvert"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="276"/>
+        <CursorPos X="27" Y="290"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="loadhexformats.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="78"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="savehexformats.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="58"/>
+        <CursorPos Y="83"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\convertKIMtapetotxt\convertjuniortodosunit.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\convertKIMtapetotxt\convertjuniortodosunit.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\convertKIMtapetotxt\ConvertKIMtapetoTXT.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="2"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\convertKIMtapetotxt\ConvertKIMtapetoTXT.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="7"/>
+        <UsageCount Value="2"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="hex8bitconvert.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="mainconvert.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="380"/>
+        <CursorPos X="19" Y="576"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\kim-1 simulator\ufilesave.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2899"/>
+        <CursorPos Y="2913"/>
+        <UsageCount Value="7"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="5"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="test.ahex"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="87" Y="12"/>
+        <UsageCount Value="16"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="test1.ahex"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\lcl\include\customcheckbox.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="119"/>
+        <CursorPos Y="134"/>
+        <UsageCount Value="9"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32lclintf.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1103"/>
+        <CursorPos X="101" Y="1121"/>
+        <UsageCount Value="8"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1072"/>
+        <CursorPos Y="1088"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+    </Units>
+    <JumpHistory Count="20" HistoryIndex="19">
+      <Position1>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="332" TopLine="310"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="21" Column="95"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="11" Column="20"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="63" Column="17" TopLine="35"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="72" Column="14" TopLine="44"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="152" Column="22" TopLine="133"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="81" Column="13" TopLine="64"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="83" Column="17" TopLine="64"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="122" Column="27" TopLine="94"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="298" Column="19" TopLine="285"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="340" Column="79" TopLine="317"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="298" Column="82" TopLine="282"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="326" TopLine="293"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="299" Column="8" TopLine="282"/>
+      </Position14>
+      <Position15>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="327" Column="2" TopLine="298"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="306" Column="8" TopLine="295"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="310" Column="9" TopLine="292"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="315" Column="22" TopLine="298"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="328" Column="7" TopLine="295"/>
+      </Position19>
+      <Position20>
+        <Filename Value="mainconvert.pas"/>
+        <Caret Line="317" Column="7" TopLine="300"/>
+      </Position20>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
